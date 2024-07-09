@@ -1,0 +1,61 @@
+html,body {
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(180deg,#00c8d6,#4ee6c9);
+    font-family: 'Liberation Sans';
+}
+
+h1,p{
+    margin: 1em auto;
+    text-align: center;
+}
+form{
+    width: 75%;
+    height: 100%;
+    max-width :500px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-image: linear-gradient(-120deg,#00a1fc,#00decc);
+    color: black;
+    margin-bottom: 2em;
+}
+fieldset {
+    border:none;
+    padding:2em auto;
+    border-bottom: 1px solid grey;
+}
+
+label{
+    display: block;
+    margin: .5em auto;
+}
+
+input,select,textarea{
+    width: 100%;
+   margin: .5em 0 0 0;
+   min-height: 1.5em;
+}
+input,textarea{
+    color: black;
+    border: 1px solid black;
+    background-color:whitesmoke;
+}
+.inline {
+    width: unset;
+    display: inline;
+    vertical-align: middle;
+    margin: .8em;
+}
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    padding: .5em 0;
+    cursor: pointer;
+    font-size: 1.01em;
+    background-color: #2f2424;
+    color: white;
+}
+select{
+    padding: .2em;
+}
