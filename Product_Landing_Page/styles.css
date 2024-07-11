@@ -1,0 +1,261 @@
+:root {
+  --yellowish: #dad560;
+  --dark: #1a1f29;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+form,
+section,
+footer {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--dark);
+  color: var(--yellowish);
+  position: fixed;
+  width: 100%;
+  min-height: 100px;
+  top: 0;
+}
+
+.logo img {
+  margin-left: 2rem;
+  cursor: pointer;
+  width: 100px;
+}
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: var(--yellowish);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+#nav-bar a:hover {
+  opacity: 0.8;
+}
+
+#form {
+  margin: 130px auto 0;
+  width: 100%;
+}
+
+#form p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#form input[type="email"] {
+  border: 1px solid var(--dark);
+  padding: 5px;
+  margin: 10px auto;
+  display: block;
+  max-width: 275px;
+  width: 100%;
+}
+
+#form input[type="submit"] {
+  font-weight: 700;
+  display: block;
+  margin: 10px auto;
+  background-color: var(--dark);
+  color: var(--yellowish);
+  padding: 8px 16px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+
+#form input[type="submit"]:hover {
+  background-color: var(--yellowish);
+  color: var(--dark);
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid var(--dark);
+}
+
+#features {
+  margin-top: 60px;
+}
+
+.features-list {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.features-list i {
+  padding: 2rem;
+  font-size: 50px;
+}
+.features-desc {
+  padding-left: 10px;
+  font-size: 1.8rem;
+}
+#history {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+}
+#history iframe {
+  width: 100%;
+  max-width: 550px;
+}
+#pricing {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+  margin-top: 60px;
+}
+#pricing .price-details {
+  border: 1px solid var(--dark);
+  max-width: 300px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.momo-type,
+.momo-price,
+.momo-desc {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.momo-type {
+  text-transform: uppercase;
+  background-color: var(--dark);
+  color: var(--yellowish);
+  margin: 0;
+  padding: 1rem;
+  font-weight: 600;
+}
+.momo-price::before {
+  content: "NPR.";
+}
+.momo-price {
+  margin: 1rem;
+}
+
+.momo-desc {
+  width: 80%;
+  margin: auto;
+}
+
+.price-details input[type="button"] {
+  display: block;
+  margin: 2rem auto 1rem;
+  background-color: var(--yellowish);
+  color: var(--dark);
+  padding: 8px 16px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.price-details input[type="button"]:hover {
+  border: 1px solid var(--dark);
+}
+
+footer {
+  margin-top: 60px;
+  background-color: var(--dark);
+  color: var(--yellowish);
+  padding: 1rem 1.5rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 2rem;
+}
+
+footer p {
+  text-align: end;
+}
+
+footer li,
+p {
+  font-size: 1.6rem;
+}
+
+footer li {
+  list-style: none;
+  cursor: pointer;
+}
+
+footer li:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 9px;
+  }
+  #header {
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .logo img {
+    margin-left: 7px;
+  }
+  #nav-bar ul {
+    column-gap: 2.5rem;
+  }
+  .features-list i {
+    display: none;
+  }
+  .features-desc {
+    max-width: 400px;
+    width: 100%;
+  }
+  #video iframe {
+    width: 100%;
+    max-width: 450px;
+  }
+  #pricing {
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    align-items: center;
+  }
+}
